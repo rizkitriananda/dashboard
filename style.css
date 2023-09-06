@@ -1,0 +1,146 @@
+:root {
+  --font_inter: "Inter", sans-serif;
+  --font_poppins: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.search {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  font-family: var(--font_poppins);
+  border-radius: 50px;
+  background-color: #f87979;
+  outline: 3px solid #8141f8;
+}
+
+.search input {
+  width: 350px;
+  height: 36px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+.search button {
+  height: 36px;
+  border: none;
+  border-left: none;
+  padding: 5px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  background-color: #a2a5aa;
+}
+
+.search button svg {
+  fill: white;
+}
+
+.search button:hover {
+  background-color: #aca8a8;
+}
+
+.search button:hover svg {
+  fill: rgb(47, 111, 231);
+}
+
+.search button svg {
+  margin: 3px 10px 0 5px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+  font-family: var(--font_inter);
+}
+
+th,
+td {
+  padding: 7px; /* Menghapus padding */
+  margin: 0; /* Menghapus margin */
+  border-left: 1px solid rgb(197, 197, 197);
+  border-right: 1px solid rgb(197, 197, 197);
+  font-size: 20px;
+}
+
+.rows-head:nth-child(1) {
+  height: 55px;
+  border-top: 1px solid rgb(197, 197, 197);
+  border-bottom: 1px solid rgb(197, 197, 197);
+  color: rgb(255, 252, 252);
+  background-color: #1e56f0;
+}
+
+.rows-head:nth-last-child(1) {
+  border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.rows-head th:nth-child(2) {
+  width: 130px;
+}
+
+.rows:nth-child(even) {
+  background-color: #dfdfdf;
+}
+.rows:nth-child(odd) {
+  background-color: #c4c1c1;
+}
+
+.rows:hover {
+  background-color: #8a8c8d;
+  color: white;
+  cursor: default;
+}
+
+.rows td:nth-child(1) {
+  background-color: #849dec;
+}
+
+.rows td:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rows td:nth-child(2) .line {
+  color: rgb(63, 63, 63);
+  margin: 8px 5px 0 5px;
+  margin-top: 6px;
+}
+
+.rows td {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.rows td .remove,
+span {
+  width: fit-content;
+}
+
+.rows td:nth-child(2) .remove {
+  background-color: #ff0000;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.rows td:nth-child(2) .ubah svg {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.rows td:nth-child(2) .ubah svg:hover {
+  fill: #245eff;
+}
+
+.rows td:nth-child(2) .remove:hover {
+  background-color: #cc0e0e;
+}
