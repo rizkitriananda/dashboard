@@ -75,15 +75,11 @@ th,
 td {
   padding: 7px;
   margin: 0;
-  /* border-left: 1px solid rgb(197, 197, 197);
-  border-right: 1px solid rgb(197, 197, 197); */
   font-size: 20px;
 }
 
 .rows-head:nth-child(1) {
   height: 55px;
-  border-top: 1px solid rgb(197, 197, 197);
-  border-bottom: 1px solid rgb(197, 197, 197);
   color: rgb(255, 252, 252);
   background-color: #15616d;
 }
@@ -116,6 +112,7 @@ td {
 .rows td:nth-child(2) {
   display: flex;
   justify-content: space-evenly;
+  border-right: 1px solid rgb(187, 183, 183);
 }
 
 .rows td:nth-child(2) .line {
