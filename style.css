@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: #efefef;
 }
 
 .search {
@@ -16,7 +16,7 @@ body {
   font-family: var(--font_poppins);
   border-radius: 50px;
   background-color: #f87979;
-  outline: 3px solid #8141f8;
+  outline: 3px solid #a97ef8;
 }
 
 .search input {
@@ -28,6 +28,12 @@ body {
   border-radius: 20px 0 0 20px;
   background-color: #e0e0e0;
   outline: none;
+  transition: all 0.2s;
+}
+
+.search input:focus {
+  background-color: #ffffff;
+  outline-offset: 20px;
 }
 
 .search button {
@@ -37,7 +43,7 @@ body {
   padding: 5px;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
-  background-color: #a2a5aa;
+  background-color: #15616d;
 }
 
 .search button svg {
@@ -45,11 +51,7 @@ body {
 }
 
 .search button:hover {
-  background-color: #aca8a8;
-}
-
-.search button:hover svg {
-  fill: rgb(47, 111, 231);
+  background-color: #001524;
 }
 
 .search button svg {
@@ -60,14 +62,21 @@ table {
   border-collapse: collapse;
   margin: 50px auto;
   font-family: var(--font_inter);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+th {
+  letter-spacing: 1px;
 }
 
 th,
 td {
-  padding: 7px; /* Menghapus padding */
-  margin: 0; /* Menghapus margin */
-  border-left: 1px solid rgb(197, 197, 197);
-  border-right: 1px solid rgb(197, 197, 197);
+  padding: 7px;
+  margin: 0;
+  /* border-left: 1px solid rgb(197, 197, 197);
+  border-right: 1px solid rgb(197, 197, 197); */
   font-size: 20px;
 }
 
@@ -76,7 +85,7 @@ td {
   border-top: 1px solid rgb(197, 197, 197);
   border-bottom: 1px solid rgb(197, 197, 197);
   color: rgb(255, 252, 252);
-  background-color: #1e56f0;
+  background-color: #15616d;
 }
 
 .rows-head:nth-last-child(1) {
@@ -88,10 +97,10 @@ td {
 }
 
 .rows:nth-child(even) {
-  background-color: #dfdfdf;
+  background-color: #ebebeb;
 }
 .rows:nth-child(odd) {
-  background-color: #c4c1c1;
+  background-color: #dfdbdb;
 }
 
 .rows:hover {
@@ -101,7 +110,7 @@ td {
 }
 
 .rows td:nth-child(1) {
-  background-color: #849dec;
+  background-color: #aeafaf;
 }
 
 .rows td:nth-child(2) {
@@ -135,10 +144,11 @@ span {
 .rows td:nth-child(2) .ubah svg {
   margin-top: 3px;
   cursor: pointer;
+  fill: #15616d;
 }
 
 .rows td:nth-child(2) .ubah svg:hover {
-  fill: #245eff;
+  fill: #001524;
 }
 
 .rows td:nth-child(2) .remove:hover {
